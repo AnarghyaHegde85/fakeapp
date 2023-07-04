@@ -52,10 +52,6 @@ class CategoryContainer extends PureComponent {
     }
     this.setState({categoryItem:sortedData});
   };
-
-  // handleitem = (event) => {
-  //   console.log(event.id);
-  // }
      
   render() {
        const {categoryItem,sortBy}=this.state;
@@ -67,7 +63,6 @@ class CategoryContainer extends PureComponent {
     categoryItem={categoryItem}
     sortBy={sortBy}
     handleSortChange={this.handleSortChange}
-    // handleitem={this.handleitem}
   />
     </>
     

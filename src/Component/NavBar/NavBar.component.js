@@ -15,7 +15,6 @@ class NavBarComponent extends PureComponent {
         <div className="product-list">
            {category.map((val,index) =>
               <div key={index} >
-                {/* onClick={this.props.handleChange} */}
                <Link onClick={handleitems} to={val}>
                {val}
                </Link> 

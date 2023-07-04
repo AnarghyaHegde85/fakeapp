@@ -1,29 +1,25 @@
 
-.main-pd{
-    background-color: #dc9c9c;
-
-
-.productlist{
-    border:1px solid;
+  .productlist {
+    border: 1px solid;
     position: absolute;
     top: 30%;
     left: 20%;
     right: 50%;
     bottom: 50%;
-    width:50vw;
+    width: 55vw;
     height: 52.1vh;
     background-color: rgb(243, 226, 228);
-    .productlist-cross{
-        position:absolute;
-        right: 5px;
-        font-size: 2rem;
-        text-decoration: none;
-      }
 
-   
-    .productlist-container{
+    &-cross {
+      position: absolute;
+      right: 5px;
+      font-size: 2rem;
+      text-decoration: none;
+    }
+
+    &-container {
       display: flex;
-      width:50vw;
+      width: 50vw;
       height: 50vh;
       top: 20%;
       left: 20%;
@@ -33,65 +29,68 @@
       align-content: center;
       align-items: center;
       text-align: center;
-     
-   
-    .productlist-pic{
 
-        width: 25vw;
+      .productlist-pic {
+
+        width: 30vw;
         height: 45vh;
-    }
-    .productlist-details{
-        padding: 1rem;
+      }
+
+      .productlist-details {
+      padding-left: 2rem;
+      }
     }
   }
-}
-}
-@media (max-width: 768px) {
-  .main-pd{
 
-  .productlist {
-      top: 15%;
+
+@media (max-width: 768px) {
+
+
+    .productlist {
+      top: 12%;
       left: 10%;
       right: 10%;
       bottom: 10%;
       width: 80vw;
       height: auto;
-      .productlist-container {
+
+      &-container {
         flex-direction: column;
         top: 10%;
         left: 10%;
         right: 10%;
         bottom: 10%;
         width: 80vw;
-        height: auto;
-  
-        .productlist-pic {
-          margin-top:10% ;
-            width: 60vw;
-            height: 30vh;
+        height:auto;
+        background-color: rgb(243, 226, 228);
+
+
+
+        &-pic {
+          margin-top: 10%;
+          width: 40vw;
+          height: 20vh;
+          justify-content: center;
         }
+      }
+
     }
-
   }
-}
 
-  
-}
 
 @media (max-width: 480px) {
   .productlist {
-      // top: 5%;
-      // left: 5%;
-      // right: 5%;
-      // bottom: 5%;
-      // width: 90vw;
-      // height: auto;
-      .productlist-container {
-        .productlist-pic {
-            width: 80vw;
-        }
+
+    border: none;
+
+    &-container {
+
+      border: solid 1px;
+      width: 80vw;
+
+      &-pic {
+        width: 80vw;
+      }
     }
   }
-
-  
 }

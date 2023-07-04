@@ -27,7 +27,6 @@ class ProductContainer extends PureComponent {
 
   fetchproductDetails=()=>{
     const{id}=this.props.params;
-    //const{categories}=this.props;
     console.log(id);
     fetch(`https://fakestoreapi.com/products/${id}`)
     .then(res=>res.json())
@@ -39,11 +38,7 @@ class ProductContainer extends PureComponent {
 
   render() {
     const {product}=this.state;
-
-    // if(!product){
-    //   return <div>loading</div>
     console.log(this.state.product)
-    // }
     return (
       
         <ProductComponent {...this.state}
@@ -54,5 +49,4 @@ class ProductContainer extends PureComponent {
   }
 }
 
-// export default ProductContainer;
 export default Productrender;

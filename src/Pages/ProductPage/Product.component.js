@@ -11,7 +11,7 @@ class ProductComponent extends PureComponent {
     return (
       <>
         
-          <div className='main-pd'>
+    
           <div className='productlist' >
          
          <Link className='productlist-cross' to={`/${product.category}`}>X</Link>
@@ -22,8 +22,6 @@ class ProductComponent extends PureComponent {
              <img className='productlist-pic' src={product.image} alt='productImg' />
            </div>
            <div className='productlist-details'>
-             
-             {/* <li className='id'>id: {product.id}</li> */}
              <li className='productlist-title'>{product.title}</li>
              <li className='productlist-price'>price: {product.price}</li>
              <li className='productlist-category'>category: {product.category}</li>
@@ -32,7 +30,7 @@ class ProductComponent extends PureComponent {
          </div>
          
        </div>
-          </div>
+        
     
       </>
     )
